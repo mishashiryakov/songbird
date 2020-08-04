@@ -7,6 +7,8 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: white;
+    display: flex;
+    justify-content: center;
   }
   
 @keyframes gradient {
@@ -27,8 +29,14 @@ ul {
     list-style: none;
 }
 
+#root {
+margin:0px;
+}
+
 .wrapper {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 1140px;
 }
 

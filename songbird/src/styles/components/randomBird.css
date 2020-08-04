@@ -1,0 +1,15 @@
+.random-bird-block {
+    width: 100%;
+    background: rgba(70,68,68,0.274);
+    user-select: none;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.audio-block {
+    display: flex;
+    flex-direction: column;
+}
