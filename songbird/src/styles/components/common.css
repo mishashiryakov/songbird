@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(45deg, #003b08, #03c0b0, #4fc52b, #196335);
+    background-size: 400% 400%;
+    overflow: hidden;
+    /* animation: gradient 15s ease-in infinite; */
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+  }
+  
+@keyframes gradient {
+0% {
+    background-position: 0 50%;
+}
+
+50% {
+    background-position: 100% 50%;
+}
+
+100% {
+    background-position: 0 50%;
+}
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    margin: auto;
+    width: 1140px;
+}
+
+
+@media (max-width: 1180px) {
+    .wrapper {
+        width: 900px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .wrapper {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 520px;
+    }
+}
+
+@media (max-width: 556px) {
+    .wrapper {
+        width: 310px;
+    }
+}
