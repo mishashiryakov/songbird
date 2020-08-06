@@ -7,9 +7,23 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    margin: 10px 0 10px 0;
+}
+
+.bird-img-block {
+    width: 20%;
 }
 
 .audio-block {
+    width: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.bird-title {
+    border-bottom: 1px solid rgba(184, 181, 181, 0.452);
+    /* padding: 25px 0 10px 0; */
+    font-size: 2em;
+    line-height: 1px;
 }

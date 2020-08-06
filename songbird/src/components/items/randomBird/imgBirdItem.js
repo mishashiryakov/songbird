@@ -3,7 +3,7 @@ import unknownBird from '../../../assets/img/unknown-bird.png';
 
 const styles = {
     img: {
-        height: '150px'
+        width: '80%'
     }
 }
 

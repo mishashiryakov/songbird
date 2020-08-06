@@ -1,22 +1,21 @@
 import React from 'react';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import song from '../assets/audio/ptfb.mp3';
 import ImgBirdItem from './items/randomBird/imgBirdItem';
 
 
-const RandomBird = (props) => {
+const RandomBird = ({data, currentBird}) => {
     return (
         <div className={'random-bird-block'}>
-          <ImgBirdItem />
+          <div className={'bird-img-block'}>
+             <ImgBirdItem />
+          </div>
           <div className={'audio-block'}>
-            <div className={'bird-title'}>123123</div>  
+            <div className={'bird-title'}><p>******</p></div>  
             <AudioPlayer className={'audio-player'}
-                    src={song}
+                    src={data[currentBird - 1].audio}
                     onPlay={e => console.log("onPlay")}
                     showJumpControls={false}
-                    
-                    // other props here
                 />
           </div>
           
