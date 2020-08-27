@@ -1,15 +1,9 @@
 import React from 'react';
-import unknownBird from '../../../assets/img/unknown-bird.png';
 
-const styles = {
-    img: {
-        width: '80%'
-    }
-}
 
-const ImgBirdItem = (props) => {
+const ImgBirdItem = ({answeredBird}) => {
     return (
-        <img style={styles.img} src={unknownBird} alt={'bird'} />
+        <img className={'answered-bird-img'} src={answeredBird} alt={'bird'} />
     );
 }
 

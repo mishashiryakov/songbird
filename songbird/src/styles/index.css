@@ -3,4 +3,5 @@
 @import './components/fonts.css';
 @import './components/randomBird.css';
 @import './components/answer.css';
-
+@import './components/nextButton.css';
+@import './components/stats.css';

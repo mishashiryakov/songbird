@@ -10,7 +10,7 @@ const styles = {
 
 const LogoItem = (props) => {
     return (
-        <img style={styles.img} src={logo} alt={'logo'} />
+        <img className={'logo'} style={styles.img} src={logo} alt={'logo'} />
     );
 }
 

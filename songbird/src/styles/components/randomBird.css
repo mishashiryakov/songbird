@@ -11,6 +11,9 @@
 }
 
 .bird-img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
 }
 
@@ -26,4 +29,59 @@
     /* padding: 25px 0 10px 0; */
     font-size: 2em;
     line-height: 1px;
+}
+
+.answered-bird-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1180px) {
+    .audio-block {
+        width: 70%;
+    }
+
+    .bird-img-block {
+        width: 30%;
+    }
+
+    .answered-bird-img {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bird-title {
+        font-size: 2em;
+    }
+
+    .answered-bird-img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 568px) {
+    .bird-title {
+        font-size: 1.2em;
+    }
+
+    .random-bird-block {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .answered-bird-img {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 468px) {
+    .answered-bird-img {
+        height: 70px;
+        width: 70px;
+    }
 }

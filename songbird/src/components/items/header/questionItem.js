@@ -2,15 +2,17 @@ import React from 'react';
 
 const CATEGORIES = ['Разминка', 'Воробьиные', 'Лесные птицы', 'Певчие птицы', 'Хищные птицы', 'Морские птицы'];
 
-const QuestionItem = (props) => {
+const QuestionItem = ({round}) => {
     return (
         <ul className={'categories'}>
         {CATEGORIES.map((el, index) => {
+            if(round === index){ index = 'active' }
             return(
-            <li className={'question'} key={index + 1}>{el}</li>
+                <li className={'question'} id={'question-' + index} key={index + 1}>{el}</li>
             );
         
         })}
+        
         </ul>
     );
 }

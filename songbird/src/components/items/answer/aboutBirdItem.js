@@ -3,19 +3,15 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
 const styles = {
-    img: {
-        
+    img: {        
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
 }
 
 
-
 const AboutBird = ({data, clickBird, beforeStart, afterStart}) => {
-    
     return (
-
         <div className={'about-bird'}>
             {beforeStart && <p className={'instruction'}>
                 <span>Послушайте аудио.</span>
@@ -26,18 +22,20 @@ const AboutBird = ({data, clickBird, beforeStart, afterStart}) => {
                 <div className={'bird-info'}>
                     <span>{data[clickBird - 1].name}</span>
                     <span className={'bird-species'}>{data[clickBird - 1].species}</span>
-                    <AudioPlayer className={'audio-player-small'}
-                    autoPlay={false}
+                    {afterStart && <AudioPlayer className={'audio-player-small'}
+                    
                     src={data[clickBird - 1].audio}
+                    autoPlay={false}
                     showJumpControls={false}
-                   
-                />
+                    autoPlayAfterSrcChange={false}
+                />}
                 </div>
             </div>}
             {afterStart && <div className={'bird-description'}>
                 <p>{data[clickBird - 1].description}</p>
             </div>}
         </div>
+        
     );
 }
 

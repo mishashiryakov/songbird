@@ -5,15 +5,15 @@ import QuestionItem from './items/header/questionItem';
 
 
 
-const Header = ({ score }) => {
+const Header = ({ score, round}) => {
     return (
         <header>
             <div className={'logoScore'}>
-                <LogoItem />
+                <LogoItem/>
                 <ScoreItem score={score} />
             </div>
             <div className={'question-list'}>
-                <QuestionItem />
+                <QuestionItem round={round} />
             </div>
         </header>
     );
