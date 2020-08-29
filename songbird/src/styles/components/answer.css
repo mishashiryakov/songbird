@@ -99,6 +99,14 @@
     user-select: none;
 }
 
+
+
+@media (max-width: 1176px) {
+    .bird-description p {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
 @media (max-width: 950px) {
     .about-bird {
         padding: 20px 10px;
@@ -143,6 +151,8 @@
     .bird-btn {
         width: 5px;
         height: 5px;
+        margin-right: 20px;
+
     }
 
     .bird-card {
@@ -154,12 +164,46 @@
     } */
 }
 
+@media (max-width: 476px) {
+    .current-bird-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .bird-info {
+        width: 70%;
+    }
+
+    .bird-card {
+        align-items: center;
+    }
+
+    .bird-btn {
+        margin-right: 10px;
+
+    }
+
+    .bird-li {
+        padding: 10px 10px;
+    }
+}
+
 @media (max-width: 415px) {
     .bird-description {
         font-size: .8em;
     }
 
-    .about-bird {
-
+    .current-bird-img {
+        width: 80px;
+        height: 80px;
     }
+    
+}
+
+@media (max-width: 345px) {
+    .current-bird-img {
+        width: 75px;
+        height: 75px;
+    }
+    
 }

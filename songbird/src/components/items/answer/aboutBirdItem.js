@@ -9,7 +9,6 @@ const styles = {
     }
 }
 
-
 const AboutBird = ({data, clickBird, beforeStart, afterStart}) => {
     return (
         <div className={'about-bird'}>

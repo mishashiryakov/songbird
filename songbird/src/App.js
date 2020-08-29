@@ -70,19 +70,11 @@ class App extends React.Component {
       beforeStart: false,
       afterStart: true,
     })
-
-    if(document.querySelector('.audio-player-small')) {
-      // setTimeout(() => {document.querySelector('.audio-player-small').firstChild.pause()}, 100)
-      
-    }
   }
 
   startNextLevel() {
     if(this.state.round === 5) {
-      // setTimeout(() => {document.querySelector('.audio-player').firstChild.pause()}, 100)
       this.showStats()
-      
-
     }
 
     if(!this.state.playMode && this.state.round !== 5) {
@@ -104,10 +96,6 @@ class App extends React.Component {
         answeredBirdName: '******'
       })
     }
-    // setTimeout(() => {document.querySelector('.audio-player').firstChild.pause()}, 110)
-     
-    
-
   }
 
   showStats() {
@@ -137,7 +125,6 @@ class App extends React.Component {
       showStats: 'none',
       showGame: 'block'
     })
-    // setTimeout(() => {document.querySelector('.audio-player').firstChild.pause()}, 110)
   }
 
   render() {

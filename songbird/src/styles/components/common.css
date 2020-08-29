@@ -2,7 +2,7 @@ body {
     background: linear-gradient(45deg, #003b08, #03c0b0, #4fc52b, #196335);
     background-size: 400% 400%;
     overflow: hidden;
-    /* animation: gradient 15s ease-in infinite; */
+    animation: gradient 15s ease-in infinite;
     font-family: 'Comfortaa';
     font-weight: 400;
     color: white;
